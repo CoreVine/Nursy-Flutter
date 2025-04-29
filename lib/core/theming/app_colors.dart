@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  static const Color background = Color(0xFFFFFFFF);
-  static const Color darkBlue = Color(0xFF004799);
-  static const Color delete = Color(0xFFFD5053);
-  static const Color icons = Color(0xFF282828);
-  static const Color implemented = Color(0xFF00D270);
-  static const Color notImplemented = Color(0xFFFF9011);
-  static const Color primary = Color(0xFF0077FF);
-  static const Color primary10 = Color(0x1A0077FF);
-  static const Color text = Color(0xFF282828);
-  static const Color text40 = Color(0x66282828);
-  static const Color text60 = Color(0x99282828);
-  static const Color textfiled = Color(0xFFF2F2F2);
-  static const Color waterDrop = Color(0xFFD6E7EE);
-  static const Color white15 = Color(0x26FFFFFF);
-  static const Color white25 = Color(0x40FFFFFF);
+  static const Color white = Color(0XFFFFFFFF);
+  static const Color deepTeal = Color(0XFF375885);
+  static const Color skyBlue = Color(0XFF59A3D4);
+  static const Color paleSkyBlue = Color(0XFFB8D8ED);
+  static const Color tealGreen = Color(0XFF129A7F);
+  static const Color eerieBlack = Color(0XFF101720);
+  static const Color lightGray = Color(0XFFB3B3B3);
+  static const Color softGray = Color(0XFFF0F0F0);
+  static const Color mediumGray = Color(0XFF777777);
+  static const Color brightTeal = Color(0XFF17C09F);
+  static const Color star = Color(0XFF51819E);
+  static const Color iceBlue = Color(0XFF74B9E2);
+  static const Color ice = Color(0XFFE7EAEF);
+  static const Color deepRed = Color(0XFF9A263B);
   static const Color transparent = Colors.transparent;
 
   // Optional: Add a method to create a MaterialColor from a single Color

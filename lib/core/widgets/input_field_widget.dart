@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:nursy/core/theming/app_colors.dart';
 import 'package:nursy/core/theming/app_text_styles.dart';
 
 class InputFieldWidget extends StatelessWidget {
@@ -24,52 +24,24 @@ class InputFieldWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 8.0.w),
-            child: Text(
-              labelText,
-              style: AppTextStyles.poppins14Regular,
-            ),
+      child: TextFormField(
+        keyboardType: keyboardType,
+        obscureText: isObscure ?? false,
+        controller: textController,
+        decoration: InputDecoration(
+          hintText: labelText,
+          hintStyle: AppTextStyles.inter14Medium(context).copyWith(color: AppColors.lightGray),
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0), borderSide: const BorderSide(color: Colors.transparent)),
+          focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0), borderSide: const BorderSide(color: Colors.blue)),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12.0),
+            borderSide: const BorderSide(color: Colors.transparent),
           ),
-          Container(
-            decoration: BoxDecoration(
-              color: const Color(0x0f282828),
-              borderRadius: BorderRadius.circular(12.0),
-            ),
-            child: TextFormField(
-              keyboardType: keyboardType,
-              obscureText: isObscure ?? false,
-              controller: textController,
-              decoration: InputDecoration(
-                hintText: labelText,
-                hintStyle: const TextStyle(color: Colors.black12),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12.0),
-                  borderSide: const BorderSide(color: Colors.transparent),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12.0),
-                  borderSide: const BorderSide(color: Colors.blue),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12.0),
-                  borderSide: const BorderSide(color: Colors.transparent),
-                ),
-                errorBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12.0),
-                  borderSide: const BorderSide(color: Colors.red),
-                ),
-                contentPadding:
-                    const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                suffixIcon: suffixIcon,
-              ),
-              validator: validator,
-            ),
-          ),
-        ],
+          errorBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(12.0), borderSide: const BorderSide(color: Colors.red)),
+          contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+          suffixIcon: suffixIcon,
+        ),
+        validator: validator,
       ),
     );
   }
