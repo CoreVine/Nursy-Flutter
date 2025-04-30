@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nursy/core/constants/assets.dart';
 import 'package:nursy/core/helpers/extensions.dart';
 import 'dart:async';
 
@@ -11,8 +12,7 @@ class SplashScreen extends StatefulWidget {
   _SplashScreenState createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen>
-    with SingleTickerProviderStateMixin {
+class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
 
@@ -20,10 +20,7 @@ class _SplashScreenState extends State<SplashScreen>
   void initState() {
     super.initState();
 
-    _controller = AnimationController(
-      vsync: this,
-      duration: const Duration(seconds: 2),
-    );
+    _controller = AnimationController(vsync: this, duration: const Duration(seconds: 2));
     _animation = CurvedAnimation(parent: _controller, curve: Curves.easeInOut);
 
     _controller.forward();
@@ -57,7 +54,7 @@ class _SplashScreenState extends State<SplashScreen>
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: [Image.asset("assets/images/Arabic.png")],
+            children: [Image.asset(Assets.assetsImagesLogo)],
           ),
         ),
       ),

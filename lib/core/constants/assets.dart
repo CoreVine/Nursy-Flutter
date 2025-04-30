@@ -1,0 +1,58 @@
+// ignore_for_file: prefer_single_quotes
+class Assets {
+  Assets._();
+
+  static const String assetsIconsAkarIconsRadio = "assets/icons/akar-icons_radio.svg";
+  static const String assetsIconsCiCreditCard01 = "assets/icons/ci_credit-card-01.svg";
+  static const String assetsIconsCiRadioFill = "assets/icons/ci_radio-fill.svg";
+  static const String assetsIconsFluentMdl2ReservationOrders = "assets/icons/fluent-mdl2_reservation-orders.svg";
+  static const String assetsIconsIcBaselineStarRate = "assets/icons/ic_baseline-star-rate.svg";
+  static const String assetsIconsIcOutlineEmail = "assets/icons/ic_outline-email.svg";
+  static const String assetsIconsIcOutlinePeopleAlt = "assets/icons/ic_outline-people-alt.svg";
+  static const String assetsIconsIcSharpUpload = "assets/icons/ic_sharp-upload.svg";
+  static const String assetsIconsIconParkSolidCorrect = "assets/icons/icon-park-solid_correct.svg";
+  static const String assetsIconsIconamoonEyeFill = "assets/icons/iconamoon_eye-fill.svg";
+  static const String assetsIconsIconamoonProfile = "assets/icons/iconamoon_profile.svg";
+  static const String assetsIconsLaDollarSign = "assets/icons/la_dollar-sign.svg";
+  static const String assetsIconsLaIdCard = "assets/icons/la_id-card.svg";
+  static const String assetsIconsMaterialSymbolsDateRangeOutline = "assets/icons/material-symbols_date-range-outline.svg";
+  static const String assetsIconsMaterialSymbolsHelpOutline = "assets/icons/material-symbols_help-outline.svg";
+  static const String assetsIconsMaterialSymbolsHistoryRounded = "assets/icons/material-symbols_history-rounded.svg";
+  static const String assetsIconsMaterialSymbolsHomeOutlineRounded = "assets/icons/material-symbols_home-outline-rounded.svg";
+  static const String assetsIconsMaterialSymbolsLockOutline = "assets/icons/material-symbols_lock-outline.svg";
+  static const String assetsIconsMaterialSymbolsLogoutRounded = "assets/icons/material-symbols_logout-rounded.svg";
+  static const String assetsIconsMaterialSymbolsPaymentsOutlineRounded = "assets/icons/material-symbols_payments-outline-rounded.svg";
+  static const String assetsIconsMaterialSymbolsPhoneAndroid = "assets/icons/material-symbols_phone-android.svg";
+  static const String assetsIconsMaterialSymbolsStarHalf = "assets/icons/material-symbols_star-half.svg";
+  static const String assetsIconsMdiAccountsOutline = "assets/icons/mdi_accounts-outline.svg";
+  static const String assetsIconsMdiArrowLeft = "assets/icons/mdi_arrow-left.svg";
+  static const String assetsIconsMdiArrowRight = "assets/icons/mdi_arrow-right.svg";
+  static const String assetsIconsRiEyeOffFill = "assets/icons/ri_eye-off-fill.svg";
+  static const String assetsIconsTwemojiFlagGermany = "assets/icons/twemoji_flag-germany.svg";
+  static const String assetsImagesAmico = "assets/images/amico.svg";
+  static const String assetsImagesBackground = "assets/images/background.png";
+  static const String assetsImagesBro = "assets/images/bro.svg";
+  static const String assetsImagesBro2 = "assets/images/bro2.svg";
+  static const String assetsImagesCalender = "assets/images/calender.svg";
+  static const String assetsImagesCompanionship = "assets/images/companionship.svg";
+  static const String assetsImagesDoctor = "assets/images/doctor.svg";
+  static const String assetsImagesLogo = "assets/images/logo.svg";
+  static const String assetsImagesMissionAccomplished = "assets/images/mission_accomplished.svg";
+  static const String assetsImagesNurseCare = "assets/images/nurse_care.svg";
+  static const String assetsImagesNurseSignup = "assets/images/nurse_signup.svg";
+  static const String assetsImagesNurseSignup1 = "assets/images/nurse_signup_1.svg";
+  static const String assetsImagesNursingService = "assets/images/nursing_service.svg";
+  static const String assetsImagesOnboardingBooking = "assets/images/onboarding_booking.svg";
+  static const String assetsImagesOnboardingCare = "assets/images/onboarding_care.svg";
+  static const String assetsImagesOnboardingNurse = "assets/images/onboarding_nurse.svg";
+  static const String assetsImagesPana = "assets/images/pana.svg";
+  static const String assetsImagesPatient = "assets/images/patient.svg";
+  static const String assetsImagesPicture1 = "assets/images/picture1.png";
+  static const String assetsImagesPicture2 = "assets/images/picture2.png";
+  static const String assetsImagesProfileBg = "assets/images/profile_bg.png";
+  static const String assetsImagesProfileImg = "assets/images/profile_img.png";
+  static const String assetsImagesProfileImgRound = "assets/images/profile_img_round.png";
+  static const String assetsImagesReceipt = "assets/images/receipt.svg";
+  static const String assetsImagesSignup = "assets/images/signup.svg";
+  static const String assetsImagesSuccessfulRequest = "assets/images/successful_request.svg";
+}

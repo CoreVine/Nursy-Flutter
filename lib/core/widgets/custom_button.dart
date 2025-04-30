@@ -37,12 +37,9 @@ class CustomButton extends StatelessWidget {
           backgroundColor: bgColor ?? AppColors.deepTeal,
           padding: EdgeInsets.symmetric(
             horizontal: xPadding != null ? xPadding! : AppPaddings.gap8,
-            vertical: yPadding != null ? yPadding! : AppPaddings.gap8,
+            vertical: yPadding != null ? yPadding! : AppPaddings.gap16,
           ),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(30.r),
-            side: BorderSide(color: AppColors.transparent, width: 1.5.sp),
-          ),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.r)),
         ),
         child:
             isLoading
