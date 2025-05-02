@@ -3,6 +3,7 @@ class AppPaddings {
   static double gap8 = 8;
   static double gap10 = 10;
   static double gap12 = 12;
+  static double gap14 = 14;
   static double gap16 = 16;
   static double gap24 = 24;
   static double gap32 = 32;

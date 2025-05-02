@@ -5,8 +5,9 @@ import 'package:nursy/core/theming/app_paddings.dart';
 import 'package:nursy/core/theming/app_strokes.dart';
 import 'package:nursy/core/theming/app_text_styles.dart';
 
-class CustomButton extends StatelessWidget {
+class CustomButtonWithIcon extends StatelessWidget {
   final String text;
+  final Widget icon;
   final double? width;
   final Color? bgColor;
   final double? xPadding;
@@ -15,16 +16,17 @@ class CustomButton extends StatelessWidget {
   final bool isLoading;
   final Function()? onPressed;
 
-  const CustomButton({
+  const CustomButtonWithIcon({
     super.key,
+    required this.text,
+    required this.icon,
+    required this.onPressed,
     this.width,
     this.bgColor,
     this.xPadding,
     this.yPadding,
     this.textStyle,
     this.isLoading = false,
-    required this.text,
-    required this.onPressed,
   });
 
   @override
@@ -50,9 +52,17 @@ class CustomButton extends StatelessWidget {
                     child: CircularProgressIndicator(color: AppColors.white, strokeWidth: AppStrokes.strokeVlg),
                   ),
                 )
-                : Text(
-                  text,
-                  style: textStyle ?? AppTextStyles.inter16SemiBold(context).copyWith(color: AppColors.white),
+                : Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.min,
+                  spacing: 8,
+                  children: [
+                    Text(
+                      text,
+                      style: textStyle ?? AppTextStyles.inter16SemiBold(context).copyWith(color: AppColors.white),
+                    ),
+                    icon,
+                  ],
                 ),
       ),
     );

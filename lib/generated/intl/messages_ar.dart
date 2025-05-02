@@ -86,11 +86,15 @@ class MessageLookup extends MessageLookupByLibrary {
     "done": MessageLookupByLibrary.simpleMessage("تم"),
     "duration": MessageLookupByLibrary.simpleMessage("المدة: 3 ساعات"),
     "email": MessageLookupByLibrary.simpleMessage(" البريد الإلكتروني"),
+    "email_required": MessageLookupByLibrary.simpleMessage(
+      "البريد الإلكتروني مطلوب",
+    ),
     "emergency_call": MessageLookupByLibrary.simpleMessage("مكالمة طوارئ"),
     "expected_arrival_time": MessageLookupByLibrary.simpleMessage(
       "الوقت المتوقع للوصول: 30 دقيقة",
     ),
     "female": MessageLookupByLibrary.simpleMessage("أنثى"),
+    "finish": MessageLookupByLibrary.simpleMessage("إنهاء"),
     "finished": MessageLookupByLibrary.simpleMessage("انتهى"),
     "full_time": MessageLookupByLibrary.simpleMessage("دوام كامل"),
     "gender": MessageLookupByLibrary.simpleMessage("النوع"),
@@ -109,6 +113,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "hourly_order": MessageLookupByLibrary.simpleMessage("طلب بالساعة"),
     "id_picture": MessageLookupByLibrary.simpleMessage("صورة البطاقة الشخصية"),
     "illness_type": MessageLookupByLibrary.simpleMessage("نوع المرض"),
+    "invalid_email": MessageLookupByLibrary.simpleMessage(
+      "البريد الإلكتروني غير صالح",
+    ),
+    "invalid_phone": MessageLookupByLibrary.simpleMessage(
+      "رقم الهاتف غير صالح",
+    ),
     "invoice": MessageLookupByLibrary.simpleMessage("#الفاتورة: 6545"),
     "invoices": MessageLookupByLibrary.simpleMessage("الفواتير"),
     "kidney_clinic": MessageLookupByLibrary.simpleMessage("عيادة الكلى"),
@@ -118,6 +128,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "male": MessageLookupByLibrary.simpleMessage("ذكر"),
     "mobile": MessageLookupByLibrary.simpleMessage("رقم الموبايل"),
     "more_details": MessageLookupByLibrary.simpleMessage("تفاصيل إضافية:"),
+    "name_no_special_chars": MessageLookupByLibrary.simpleMessage(
+      "يجب ألا يحتوي الاسم على أحرف خاصة",
+    ),
     "national_id_picture": MessageLookupByLibrary.simpleMessage(
       "صورة الرقم القومي",
     ),
@@ -151,6 +164,15 @@ class MessageLookup extends MessageLookupByLibrary {
     "other": MessageLookupByLibrary.simpleMessage("اخر"),
     "our_money": MessageLookupByLibrary.simpleMessage("أموالنا"),
     "password": MessageLookupByLibrary.simpleMessage("كلمة السر"),
+    "password_length": MessageLookupByLibrary.simpleMessage(
+      "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+    ),
+    "password_mismatch": MessageLookupByLibrary.simpleMessage(
+      "كلمتا المرور غير متطابقتين",
+    ),
+    "password_required": MessageLookupByLibrary.simpleMessage(
+      "كلمة المرور مطلوبة",
+    ),
     "patient": MessageLookupByLibrary.simpleMessage("المريض"),
     "pay": MessageLookupByLibrary.simpleMessage("دفع"),
     "payment": MessageLookupByLibrary.simpleMessage("طريقة الدفع"),
@@ -159,11 +181,19 @@ class MessageLookup extends MessageLookupByLibrary {
       " الفاتورة غير مدفوعة",
     ),
     "phone_number": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
+    "phone_number_required": MessageLookupByLibrary.simpleMessage(
+      "رقم الهاتف مطلوب",
+    ),
     "proceed": MessageLookupByLibrary.simpleMessage("متابعة"),
     "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
     "promotion": MessageLookupByLibrary.simpleMessage("كود خصم"),
     "receipt": MessageLookupByLibrary.simpleMessage("إيصال الدفع"),
+    "required": MessageLookupByLibrary.simpleMessage("مطلوب"),
+    "required_field": MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب"),
     "retype_pass": MessageLookupByLibrary.simpleMessage("تأكيد كلمة السر"),
+    "retype_pass_required": MessageLookupByLibrary.simpleMessage(
+      "تأكيد كلمة المرور مطلوب",
+    ),
     "review": MessageLookupByLibrary.simpleMessage("مراجعة"),
     "salary": MessageLookupByLibrary.simpleMessage("الراتب"),
     "schedule_time": MessageLookupByLibrary.simpleMessage("تحديد الموعد"),

@@ -1,2 +1,2 @@
 bool hasTokenConstant = false;
-bool passedIntroConstant = false;
+bool hasPassedInto = false;

@@ -1,7 +1,12 @@
-import 'package:flutter/material.dart';
-import 'package:nursy/core/constants/assets.dart';
-import 'package:nursy/core/helpers/extensions.dart';
 import 'dart:async';
+
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'package:nursy/core/constants/assets.dart';
+import 'package:nursy/core/helpers/constants.dart';
+import 'package:nursy/core/helpers/extensions.dart';
+import 'package:nursy/core/theming/app_colors.dart';
 
 import '../../core/routing/routes.dart';
 
@@ -9,54 +14,31 @@ class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
   @override
-  _SplashScreenState createState() => _SplashScreenState();
+  State<SplashScreen> createState() => _SplashScreenState();
 }
 
 class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderStateMixin {
-  late AnimationController _controller;
-  late Animation<double> _animation;
-
   @override
   void initState() {
     super.initState();
-
-    _controller = AnimationController(vsync: this, duration: const Duration(seconds: 2));
-    _animation = CurvedAnimation(parent: _controller, curve: Curves.easeInOut);
-
-    _controller.forward();
-
     Timer(const Duration(seconds: 3), () {
-      context.pushReplacementNamed(
-        Routes.loginScreen,
-        // hasTokenConstant
-        //     ? Routes.mainScreen
-        //     : passedIntroConstant
-        //     ? Routes.loginScreen
-        //     : Routes.onBoardingScreen,
-      );
+      !hasPassedInto
+          ? context.pushReplacementNamed(Routes.onBoardingScreen)
+          : context.pushReplacementNamed(Routes.authScreen);
     });
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: Center(
-        child: ScaleTransition(
-          scale: _animation,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [Image.asset(Assets.assetsImagesLogo)],
-          ),
-        ),
+      backgroundColor: AppColors.skyBlue,
+      body: Column(
+        spacing: 64.h,
+        children: [
+          SizedBox.shrink(),
+          SizedBox(height: 386.h, child: Image.asset(Assets.assetsImagesNurseCare)),
+          SizedBox(height: 110.h, child: Image.asset(Assets.assetsImagesLogo)),
+        ],
       ),
     );
   }

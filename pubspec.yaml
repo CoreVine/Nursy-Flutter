@@ -89,27 +89,53 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Tajawal
-  #     fonts:
-  #       - asset: assets/fonts/Tajawal-ExtraLight.ttf
-  #         weight: 200
-  #       - asset: assets/fonts/Tajawal-Light.ttf
-  #         weight: 300
-  #       - asset: assets/fonts/Tajawal-Regular.ttf
-  #         weight: 400
-  #       - asset: assets/fonts/Tajawal-Medium.ttf
-  #         weight: 500
-  #       - asset: assets/fonts/Tajawal-Bold.ttf
-  #         weight: 700
-  #       - asset: assets/fonts/Tajawal-Black.ttf
-  #         weight: 800
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Black.ttf
+          weight: 900
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Cairo-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Cairo-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Cairo-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Cairo-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Cairo-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Cairo-SemiBold.ttf
+          weight: 600
+    - family: IBM
+      fonts:
+        - asset: assets/fonts/IBMPlexSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/IBMPlexSans-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/IBMPlexSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/IBMPlexSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/IBMPlexSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/IBMPlexSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/IBMPlexSans-Thin.ttf
+          weight: 100
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-VariableFont_opsz,wght.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
 flutter_intl:
   enabled: true
 
 flutter_assets:
-  assets_path: assets/
+  assets_path:
+    - assets/svgs
+    - assets/icons
+    - assets/images
   output_path: lib/core/constants/
   filename: assets.dart

@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:nursy/core/routing/routes.dart';
-import 'package:nursy/features/Auth/presentation/pages/login_screen.dart';
+import 'package:nursy/features/Auth/presentation/pages/auth_screen.dart';
+import 'package:nursy/features/Auth/presentation/pages/register_nurse_screen.dart';
+import 'package:nursy/features/Auth/presentation/pages/register_patient_screen.dart';
+import 'package:nursy/features/Auth/presentation/pages/register_screen.dart';
+import 'package:nursy/features/auth/presentation/pages/login_screen.dart';
+import 'package:nursy/features/on_boarding/presentation/pages/onboarding_screen.dart';
 import 'package:nursy/features/splash/splash_screen.dart';
 
 class AppRouter {
@@ -11,13 +16,23 @@ class AppRouter {
       case Routes.splashScreen:
         return MaterialPageRoute(builder: (_) => const SplashScreen());
 
+      case Routes.authScreen:
+        return MaterialPageRoute(builder: (_) => const AuthScreen());
+
       case Routes.loginScreen:
         return MaterialPageRoute(builder: (_) => const LoginScreen());
-      // case Routes.signUpScreen:
-      //   return MaterialPageRoute(builder: (_) => const SignupScreen());
 
-      // case Routes.homeScreen:
-      //   return MaterialPageRoute(builder: (_) => const HomeScreen());
+      case Routes.registerScreen:
+        return MaterialPageRoute(builder: (_) => const RegisterScreen());
+
+      case Routes.registerPatientScreen:
+        return MaterialPageRoute(builder: (_) => const RegisterPatientScreen());
+
+      case Routes.registerNurseScreen:
+        return MaterialPageRoute(builder: (_) => const RegisterNurseScreen());
+
+      case Routes.onBoardingScreen:
+        return MaterialPageRoute(builder: (_) => const OnboardingScreen());
     }
     return null;
   }
