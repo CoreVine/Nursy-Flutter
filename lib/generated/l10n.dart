@@ -60,6 +60,116 @@ class S {
     return Intl.message('Username', name: 'username', desc: '', args: []);
   }
 
+  /// `Finish`
+  String get finish {
+    return Intl.message('Finish', name: 'finish', desc: '', args: []);
+  }
+
+  /// `Required`
+  String get required {
+    return Intl.message('Required', name: 'required', desc: '', args: []);
+  }
+
+  /// `This field is required`
+  String get required_field {
+    return Intl.message(
+      'This field is required',
+      name: 'required_field',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email is required`
+  String get email_required {
+    return Intl.message(
+      'Email is required',
+      name: 'email_required',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name should not contain special characters`
+  String get name_no_special_chars {
+    return Intl.message(
+      'Name should not contain special characters',
+      name: 'name_no_special_chars',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password is required`
+  String get password_required {
+    return Intl.message(
+      'Password is required',
+      name: 'password_required',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Retype password is required`
+  String get retype_pass_required {
+    return Intl.message(
+      'Retype password is required',
+      name: 'retype_pass_required',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password mismatch`
+  String get password_mismatch {
+    return Intl.message(
+      'Password mismatch',
+      name: 'password_mismatch',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid email`
+  String get invalid_email {
+    return Intl.message(
+      'Invalid email',
+      name: 'invalid_email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password must be at least 6 characters`
+  String get password_length {
+    return Intl.message(
+      'Password must be at least 6 characters',
+      name: 'password_length',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone number is required`
+  String get phone_number_required {
+    return Intl.message(
+      'Phone number is required',
+      name: 'phone_number_required',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid phone number`
+  String get invalid_phone {
+    return Intl.message(
+      'Invalid phone number',
+      name: 'invalid_phone',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Verify phone number`
   String get verify_phone {
     return Intl.message(
@@ -150,9 +260,9 @@ class S {
     return Intl.message('SIGN UP', name: 'sign_up', desc: '', args: []);
   }
 
-  /// `NEXT`
+  /// `Next`
   String get next {
-    return Intl.message('NEXT', name: 'next', desc: '', args: []);
+    return Intl.message('Next', name: 'next', desc: '', args: []);
   }
 
   /// `SIGN IN`

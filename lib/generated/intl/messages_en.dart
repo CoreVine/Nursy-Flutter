@@ -96,11 +96,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "dura_tion": MessageLookupByLibrary.simpleMessage("Duration:"),
     "duration": MessageLookupByLibrary.simpleMessage("Duration: 3 hours"),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
+    "email_required": MessageLookupByLibrary.simpleMessage("Email is required"),
     "emergency_call": MessageLookupByLibrary.simpleMessage("Emergency call"),
     "expected_arrival_time": MessageLookupByLibrary.simpleMessage(
       "Expected arrival time: 30 minutes",
     ),
     "female": MessageLookupByLibrary.simpleMessage("Female"),
+    "finish": MessageLookupByLibrary.simpleMessage("Finish"),
     "finished": MessageLookupByLibrary.simpleMessage("Finished"),
     "full_time": MessageLookupByLibrary.simpleMessage("Full time "),
     "gender": MessageLookupByLibrary.simpleMessage("Gender"),
@@ -119,6 +121,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "hourly_order": MessageLookupByLibrary.simpleMessage("Hourly order"),
     "id_picture": MessageLookupByLibrary.simpleMessage("National ID picture"),
     "illness_type": MessageLookupByLibrary.simpleMessage("Illness type"),
+    "invalid_email": MessageLookupByLibrary.simpleMessage("Invalid email"),
+    "invalid_phone": MessageLookupByLibrary.simpleMessage(
+      "Invalid phone number",
+    ),
     "invoice": MessageLookupByLibrary.simpleMessage("#Invoice: 6545"),
     "invoices": MessageLookupByLibrary.simpleMessage("Invoices"),
     "kidney_clinic": MessageLookupByLibrary.simpleMessage("Kidney clinic"),
@@ -129,10 +135,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "male": MessageLookupByLibrary.simpleMessage("Male"),
     "mobile": MessageLookupByLibrary.simpleMessage("Mobile number"),
     "more_details": MessageLookupByLibrary.simpleMessage("More details:"),
+    "name_no_special_chars": MessageLookupByLibrary.simpleMessage(
+      "Name should not contain special characters",
+    ),
     "national_id_picture": MessageLookupByLibrary.simpleMessage(
       "National ID picture",
     ),
-    "next": MessageLookupByLibrary.simpleMessage("NEXT"),
+    "next": MessageLookupByLibrary.simpleMessage("Next"),
     "no": MessageLookupByLibrary.simpleMessage("No"),
     "normal": MessageLookupByLibrary.simpleMessage("Normal"),
     "note": MessageLookupByLibrary.simpleMessage(
@@ -164,6 +173,15 @@ class MessageLookup extends MessageLookupByLibrary {
     "other": MessageLookupByLibrary.simpleMessage("Other"),
     "our_money": MessageLookupByLibrary.simpleMessage("Our money"),
     "password": MessageLookupByLibrary.simpleMessage("Password"),
+    "password_length": MessageLookupByLibrary.simpleMessage(
+      "Password must be at least 6 characters",
+    ),
+    "password_mismatch": MessageLookupByLibrary.simpleMessage(
+      "Password mismatch",
+    ),
+    "password_required": MessageLookupByLibrary.simpleMessage(
+      "Password is required",
+    ),
     "patient": MessageLookupByLibrary.simpleMessage("Patient"),
     "pay": MessageLookupByLibrary.simpleMessage("Pay"),
     "payment": MessageLookupByLibrary.simpleMessage("Payment"),
@@ -174,11 +192,21 @@ class MessageLookup extends MessageLookupByLibrary {
       "The invoice is not paid yet",
     ),
     "phone_number": MessageLookupByLibrary.simpleMessage("Phone number"),
+    "phone_number_required": MessageLookupByLibrary.simpleMessage(
+      "Phone number is required",
+    ),
     "proceed": MessageLookupByLibrary.simpleMessage("Proceed"),
     "profile": MessageLookupByLibrary.simpleMessage("Profile"),
     "promotion": MessageLookupByLibrary.simpleMessage("Promotion"),
     "receipt": MessageLookupByLibrary.simpleMessage("Receipt"),
+    "required": MessageLookupByLibrary.simpleMessage("Required"),
+    "required_field": MessageLookupByLibrary.simpleMessage(
+      "This field is required",
+    ),
     "retype_pass": MessageLookupByLibrary.simpleMessage("Retype password"),
+    "retype_pass_required": MessageLookupByLibrary.simpleMessage(
+      "Retype password is required",
+    ),
     "review": MessageLookupByLibrary.simpleMessage("Review"),
     "salary": MessageLookupByLibrary.simpleMessage("Salary"),
     "schedule_time": MessageLookupByLibrary.simpleMessage("Schedule time"),
