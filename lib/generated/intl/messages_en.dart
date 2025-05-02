@@ -20,6 +20,8 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
+  static String m0(sec) => "No SMS received? Resend (${sec}s)";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "Success_subtitle": MessageLookupByLibrary.simpleMessage(
@@ -51,6 +53,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "birth_date": MessageLookupByLibrary.simpleMessage("Birth date"),
     "booking": MessageLookupByLibrary.simpleMessage("Booking"),
     "call_nurse": MessageLookupByLibrary.simpleMessage("Call nurse"),
+    "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
     "care": MessageLookupByLibrary.simpleMessage("Care"),
     "cash": MessageLookupByLibrary.simpleMessage("Cash"),
     "cash_payment": MessageLookupByLibrary.simpleMessage("Cash payment"),
@@ -122,6 +125,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "id_picture": MessageLookupByLibrary.simpleMessage("National ID picture"),
     "illness_type": MessageLookupByLibrary.simpleMessage("Illness type"),
     "invalid_email": MessageLookupByLibrary.simpleMessage("Invalid email"),
+    "invalid_otp_code": MessageLookupByLibrary.simpleMessage(
+      "Invalid OTP code",
+    ),
     "invalid_phone": MessageLookupByLibrary.simpleMessage(
       "Invalid phone number",
     ),
@@ -182,6 +188,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "password_required": MessageLookupByLibrary.simpleMessage(
       "Password is required",
     ),
+    "paste": MessageLookupByLibrary.simpleMessage("Paste"),
+    "paste_code": MessageLookupByLibrary.simpleMessage("Paste code"),
+    "paste_code_message": MessageLookupByLibrary.simpleMessage(
+      "Do you want to paste the code",
+    ),
     "patient": MessageLookupByLibrary.simpleMessage("Patient"),
     "pay": MessageLookupByLibrary.simpleMessage("Pay"),
     "payment": MessageLookupByLibrary.simpleMessage("Payment"),
@@ -203,6 +214,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "required_field": MessageLookupByLibrary.simpleMessage(
       "This field is required",
     ),
+    "resend_code": MessageLookupByLibrary.simpleMessage("Resend code"),
     "retype_pass": MessageLookupByLibrary.simpleMessage("Retype password"),
     "retype_pass_required": MessageLookupByLibrary.simpleMessage(
       "Retype password is required",
@@ -218,9 +230,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "sign_in": MessageLookupByLibrary.simpleMessage("SIGN IN"),
     "sign_up": MessageLookupByLibrary.simpleMessage("SIGN UP"),
     "sign_up_as": MessageLookupByLibrary.simpleMessage("Sign up as..."),
-    "sms_not_received": MessageLookupByLibrary.simpleMessage(
-      "No SMS received? Resend (176s)",
-    ),
+    "sms_not_received": m0,
     "sms_sent": MessageLookupByLibrary.simpleMessage(
       "A SMS includes a digital code has been sent to your number",
     ),
@@ -234,6 +244,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "success": MessageLookupByLibrary.simpleMessage("Success"),
     "terms": MessageLookupByLibrary.simpleMessage("Terms & Conditions"),
+    "terms_error": MessageLookupByLibrary.simpleMessage(
+      "You must accept the terms and conditions",
+    ),
     "thank_you_registration": MessageLookupByLibrary.simpleMessage(
       "Thank you for registration, your request is currently reviewed by our team we will send you email upon verification",
     ),

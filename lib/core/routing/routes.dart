@@ -7,6 +7,7 @@ class Routes {
   static const String loginScreen = '/loginScreen';
   static const String registerScreen = '/registerScreen';
   static const String registerPatientScreen = '/registerScreen/patient';
+  static const String patientVerifyScreen = '/verifyScreen/patient';
   static const String registerNurseScreen = '/registerScreen/nurse';
   static const String homeScreen = '/homeScreen';
 }

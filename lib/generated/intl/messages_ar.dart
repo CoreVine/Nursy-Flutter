@@ -20,6 +20,8 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'ar';
 
+  static String m0(sec) => "لم يصلك الكود؟ إعادة الإرسال (${sec} ثانية)";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "Success_subtitle": MessageLookupByLibrary.simpleMessage(
@@ -45,6 +47,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "birth_date": MessageLookupByLibrary.simpleMessage(" تاريخ الميلاد"),
     "booking": MessageLookupByLibrary.simpleMessage(" الحجز"),
     "call_nurse": MessageLookupByLibrary.simpleMessage("اتصل بالممرضة"),
+    "cancel": MessageLookupByLibrary.simpleMessage("إلغاء"),
     "care": MessageLookupByLibrary.simpleMessage("رعاية"),
     "cash": MessageLookupByLibrary.simpleMessage("نقدي"),
     "cash_payment": MessageLookupByLibrary.simpleMessage("دفع نقدي"),
@@ -116,6 +119,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "invalid_email": MessageLookupByLibrary.simpleMessage(
       "البريد الإلكتروني غير صالح",
     ),
+    "invalid_otp_code": MessageLookupByLibrary.simpleMessage(
+      "كود التفعيل غير صالح",
+    ),
     "invalid_phone": MessageLookupByLibrary.simpleMessage(
       "رقم الهاتف غير صالح",
     ),
@@ -173,6 +179,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "password_required": MessageLookupByLibrary.simpleMessage(
       "كلمة المرور مطلوبة",
     ),
+    "paste": MessageLookupByLibrary.simpleMessage("لصق"),
+    "paste_code": MessageLookupByLibrary.simpleMessage("لصق الكود"),
+    "paste_code_message": MessageLookupByLibrary.simpleMessage(
+      "هل تريد لصق الكود",
+    ),
     "patient": MessageLookupByLibrary.simpleMessage("المريض"),
     "pay": MessageLookupByLibrary.simpleMessage("دفع"),
     "payment": MessageLookupByLibrary.simpleMessage("طريقة الدفع"),
@@ -190,6 +201,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "receipt": MessageLookupByLibrary.simpleMessage("إيصال الدفع"),
     "required": MessageLookupByLibrary.simpleMessage("مطلوب"),
     "required_field": MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب"),
+    "resend_code": MessageLookupByLibrary.simpleMessage("إعادة إرسال الكود"),
     "retype_pass": MessageLookupByLibrary.simpleMessage("تأكيد كلمة السر"),
     "retype_pass_required": MessageLookupByLibrary.simpleMessage(
       "تأكيد كلمة المرور مطلوب",
@@ -205,9 +217,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "sign_in": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "sign_up": MessageLookupByLibrary.simpleMessage("تسجيل حساب جديد"),
     "sign_up_as": MessageLookupByLibrary.simpleMessage("سجل كـ..."),
-    "sms_not_received": MessageLookupByLibrary.simpleMessage(
-      "لم يصلك الكود؟ إعادة الإرسال (176 ثانية)",
-    ),
+    "sms_not_received": m0,
     "sms_sent": MessageLookupByLibrary.simpleMessage(
       "تم إرسال كود التفعيل إلى رقمك",
     ),
@@ -218,6 +228,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "specific_services": MessageLookupByLibrary.simpleMessage("خدمات محددة"),
     "success": MessageLookupByLibrary.simpleMessage("نجاح"),
     "terms": MessageLookupByLibrary.simpleMessage(" الشروط والأحكام"),
+    "terms_error": MessageLookupByLibrary.simpleMessage(
+      "يجب عليك قبول الشروط والأحكام",
+    ),
     "thank_you_registration": MessageLookupByLibrary.simpleMessage(
       "شكراً لتسجيلك، طلبك قيد المراجعة حالياً من قبل فريقنا، وسوف نرسل لك بريداً إلكترونياً عند التحقق",
     ),

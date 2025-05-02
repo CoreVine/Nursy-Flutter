@@ -12,6 +12,7 @@
   "password_length": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
   "phone_number_required": "رقم الهاتف مطلوب",
   "invalid_phone": "رقم الهاتف غير صالح",
+  "invalid_otp_code": "كود التفعيل غير صالح",
   "verify_phone": "تحقق من رقم الهاتف",
   "mobile": "رقم الموبايل",
   "sms_sent": "تم إرسال كود التفعيل إلى رقمك",
@@ -20,8 +21,10 @@
   "password": "كلمة السر",
   "custodian": "مقدم الرعاية",
   "patient": "المريض",
-  "sms_not_received": "لم يصلك الكود؟ إعادة الإرسال (176 ثانية)",
+  "sms_not_received": "لم يصلك الكود؟ إعادة الإرسال ({sec} ثانية)",
+  "resend_code": "إعادة إرسال الكود",
   "terms": " الشروط والأحكام",
+  "terms_error": "يجب عليك قبول الشروط والأحكام",
   "retype_pass": "تأكيد كلمة السر",
   "sign_up": "تسجيل حساب جديد",
   "next": "متابعة",
@@ -151,5 +154,9 @@
   "proceed": "متابعة",
   "payment_method": "طريقة الدفع",
   "the_cost_per_hour": "التكلفة لكل ساعة",
-  "have_payment ?": "هل استلمت الدفع؟"
+  "have_payment ?": "هل استلمت الدفع؟",
+  "paste": "لصق",
+  "cancel": "إلغاء",
+  "paste_code": "لصق الكود",
+  "paste_code_message": "هل تريد لصق الكود"
 }
