@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nursy/core/routing/routes.dart';
 import 'package:nursy/features/Auth/presentation/pages/auth_screen.dart';
+import 'package:nursy/features/Auth/presentation/pages/patient_verify_otp_screen.dart';
 import 'package:nursy/features/Auth/presentation/pages/register_nurse_screen.dart';
 import 'package:nursy/features/Auth/presentation/pages/register_patient_screen.dart';
 import 'package:nursy/features/Auth/presentation/pages/register_screen.dart';
@@ -16,6 +17,9 @@ class AppRouter {
       case Routes.splashScreen:
         return MaterialPageRoute(builder: (_) => const SplashScreen());
 
+      case Routes.onBoardingScreen:
+        return MaterialPageRoute(builder: (_) => const OnboardingScreen());
+
       case Routes.authScreen:
         return MaterialPageRoute(builder: (_) => const AuthScreen());
 
@@ -28,11 +32,11 @@ class AppRouter {
       case Routes.registerPatientScreen:
         return MaterialPageRoute(builder: (_) => const RegisterPatientScreen());
 
+      case Routes.patientVerifyScreen:
+        return MaterialPageRoute(builder: (_) => const PatientVerifyOtpScreen());
+
       case Routes.registerNurseScreen:
         return MaterialPageRoute(builder: (_) => const RegisterNurseScreen());
-
-      case Routes.onBoardingScreen:
-        return MaterialPageRoute(builder: (_) => const OnboardingScreen());
     }
     return null;
   }

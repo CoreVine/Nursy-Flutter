@@ -4,11 +4,15 @@ import 'package:flutter_svg/svg.dart';
 import 'package:intl/intl.dart';
 
 import 'package:nursy/core/constants/assets.dart';
+import 'package:nursy/core/helpers/extensions.dart';
 import 'package:nursy/core/helpers/validators.dart';
+import 'package:nursy/core/routing/routes.dart';
 import 'package:nursy/core/widgets/custom_button_with_icon.dart';
 import 'package:nursy/core/widgets/custom_text_field.dart';
 
 import 'package:nursy/features/Auth/presentation/widgets/eye_widget.dart';
+import 'package:nursy/features/Auth/presentation/widgets/patient_types_radio_button.dart';
+import 'package:nursy/features/Auth/presentation/widgets/terms_conditions_check_box.dart';
 import 'package:nursy/generated/l10n.dart';
 
 class PatientRegisterFormSection extends StatefulWidget {
@@ -26,6 +30,8 @@ class _PatientRegisterFormSectionState extends State<PatientRegisterFormSection>
   final TextEditingController _confirmPasswordController = TextEditingController();
   bool isObscure = true;
   AutovalidateMode _autoValidateMode = AutovalidateMode.disabled;
+  String selectedRole = 'custodian';
+  bool isChecked = false;
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -41,7 +47,6 @@ class _PatientRegisterFormSectionState extends State<PatientRegisterFormSection>
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: SvgPicture.asset(Assets.assetsIconsIconamoonProfile),
             ),
-
             validator: (value) => AppValidators.nameValidator(value, context),
           ),
           CustomTextField(
@@ -51,7 +56,6 @@ class _PatientRegisterFormSectionState extends State<PatientRegisterFormSection>
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: SvgPicture.asset(Assets.assetsIconsIcOutlineEmail),
             ),
-
             validator: (value) => AppValidators.emailValidator(value, context),
           ),
           CustomTextField(
@@ -90,7 +94,27 @@ class _PatientRegisterFormSectionState extends State<PatientRegisterFormSection>
             isObscure: isObscure,
             validator: (value) => AppValidators.confirmPasswordValidator(value, _passwordController.text, context),
           ),
-          SizedBox(height: 32.h),
+          Column(
+            children: [
+              PatientTypeRadioButtons(
+                selectedRole: selectedRole,
+                onChanged: (value) {
+                  setState(() {
+                    selectedRole = value;
+                  });
+                },
+              ),
+              TermsConditionsCheckBox(
+                isChecked: isChecked,
+                onChanged: (value) {
+                  setState(() {
+                    isChecked = value!;
+                  });
+                },
+              ),
+            ],
+          ),
+          SizedBox(height: 16.h),
           CustomButtonWithIcon(
             icon:
                 Intl.getCurrentLocale() == "ar"
@@ -100,6 +124,9 @@ class _PatientRegisterFormSectionState extends State<PatientRegisterFormSection>
             text: S.of(context).next,
             onPressed: () {
               if (_formKey.currentState!.validate()) {
+                context.pushNamed(
+                  selectedRole == 'custodian' ? Routes.patientVerifyScreen : Routes.patientVerifyScreen,
+                );
               } else {
                 setState(() {
                   _autoValidateMode = AutovalidateMode.onUserInteraction;

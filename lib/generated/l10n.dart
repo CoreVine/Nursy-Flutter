@@ -170,6 +170,16 @@ class S {
     );
   }
 
+  /// `Invalid OTP code`
+  String get invalid_otp_code {
+    return Intl.message(
+      'Invalid OTP code',
+      name: 'invalid_otp_code',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Verify phone number`
   String get verify_phone {
     return Intl.message(
@@ -225,14 +235,19 @@ class S {
     return Intl.message('Patient', name: 'patient', desc: '', args: []);
   }
 
-  /// `No SMS received? Resend (176s)`
-  String get sms_not_received {
+  /// `No SMS received? Resend ({sec}s)`
+  String sms_not_received(Object sec) {
     return Intl.message(
-      'No SMS received? Resend (176s)',
+      'No SMS received? Resend (${sec}s)',
       name: 'sms_not_received',
       desc: '',
-      args: [],
+      args: [sec],
     );
+  }
+
+  /// `Resend code`
+  String get resend_code {
+    return Intl.message('Resend code', name: 'resend_code', desc: '', args: []);
   }
 
   /// `Terms & Conditions`
@@ -240,6 +255,16 @@ class S {
     return Intl.message(
       'Terms & Conditions',
       name: 'terms',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You must accept the terms and conditions`
+  String get terms_error {
+    return Intl.message(
+      'You must accept the terms and conditions',
+      name: 'terms_error',
       desc: '',
       args: [],
     );
@@ -1197,6 +1222,31 @@ class S {
   }
 
   // skipped getter for the 'have_payment ?' key
+
+  /// `Paste`
+  String get paste {
+    return Intl.message('Paste', name: 'paste', desc: '', args: []);
+  }
+
+  /// `Cancel`
+  String get cancel {
+    return Intl.message('Cancel', name: 'cancel', desc: '', args: []);
+  }
+
+  /// `Paste code`
+  String get paste_code {
+    return Intl.message('Paste code', name: 'paste_code', desc: '', args: []);
+  }
+
+  /// `Do you want to paste the code`
+  String get paste_code_message {
+    return Intl.message(
+      'Do you want to paste the code',
+      name: 'paste_code_message',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

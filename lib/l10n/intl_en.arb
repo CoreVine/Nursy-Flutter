@@ -12,6 +12,7 @@
   "password_length": "Password must be at least 6 characters",
   "phone_number_required": "Phone number is required",
   "invalid_phone": "Invalid phone number",
+  "invalid_otp_code": "Invalid OTP code",
   "verify_phone": "Verify phone number",
   "mobile": "Mobile number",
   "sms_sent": "A SMS includes a digital code has been sent to your number",
@@ -20,8 +21,10 @@
   "password": "Password",
   "custodian": "Custodian",
   "patient": "Patient",
-  "sms_not_received": "No SMS received? Resend (176s)",
+  "sms_not_received": "No SMS received? Resend ({sec}s)",
+  "resend_code": "Resend code",
   "terms": "Terms & Conditions",
+  "terms_error": "You must accept the terms and conditions",
   "retype_pass": "Retype password",
   "sign_up": "SIGN UP",
   "next": "Next",
@@ -152,5 +155,9 @@
   "proceed": "Proceed",
   "payment_method": "Your payment method",
   "the_cost_per_hour": "The cost per hour",
-  "have_payment ?": "Have you received the payment ?"
+  "have_payment ?": "Have you received the payment ?",
+  "paste": "Paste",
+  "cancel": "Cancel",
+  "paste_code": "Paste code",
+  "paste_code_message": "Do you want to paste the code"
 }

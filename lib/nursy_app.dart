@@ -32,6 +32,7 @@ class NursyApp extends StatelessWidget {
               supportedLocales: S.delegate.supportedLocales,
               title: 'nursy app',
               theme: ThemeData(
+                fontFamily: "Inter",
                 primaryColor: Colors.blue,
                 colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
                 scaffoldBackgroundColor: Colors.white,
