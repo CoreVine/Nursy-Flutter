@@ -27,7 +27,12 @@ class AuthScreen extends StatelessWidget {
               child: Column(
                 spacing: 16.h,
                 children: [
-                  CustomButton(text: S.of(context).sign_in, onPressed: () {}),
+                  CustomButton(
+                    text: S.of(context).sign_in,
+                    onPressed: () {
+                      context.pushNamed(Routes.loginScreen);
+                    },
+                  ),
                   CustomButton(
                     text: S.of(context).sign_up,
                     onPressed: () {

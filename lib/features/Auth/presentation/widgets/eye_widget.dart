@@ -11,6 +11,7 @@ class EyeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
+      focusNode: FocusNode(descendantsAreFocusable: false, canRequestFocus: false, skipTraversal: true),
       onPressed: onTap,
       icon:
           isObscure
