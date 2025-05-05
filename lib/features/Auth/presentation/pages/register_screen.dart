@@ -40,9 +40,17 @@ class RegisterScreen extends StatelessWidget {
                           style: AppTextStyles.ibmPlexSans24Bold(context).copyWith(color: AppColors.skyBlue),
                         ),
                       ),
-                      PatientCard(),
+                      LeadingImageCard(
+                        title: S.of(context).patient,
+                        image: Assets.assetsImagesPana,
+                        onTap: () => context.pushNamed(Routes.registerPatientScreen),
+                      ),
                       SizedBox(height: 24.h),
-                      NurseCard(),
+                      TrailingImageCard(
+                        title: S.of(context).nurse,
+                        image: Assets.assetsImagesPatient,
+                        onTap: () => context.pushNamed(Routes.registerNurseScreen),
+                      ),
                     ],
                   ),
                 ),
@@ -55,49 +63,107 @@ class RegisterScreen extends StatelessWidget {
   }
 }
 
-class NurseCard extends StatelessWidget {
-  const NurseCard({super.key});
+class TrailingImageCard extends StatelessWidget {
+  const TrailingImageCard({
+    super.key,
+    this.onTap,
+    this.textColor = AppColors.white,
+    this.cardColor = AppColors.deepTeal,
+    this.hasShadow = false,
+    required this.title,
+    required this.image,
+  });
+
+  final Color cardColor;
+  final Color textColor;
+  final String title;
+  final String image;
+  final bool hasShadow;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () => context.pushNamed(Routes.registerNurseScreen),
-      child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 45.w),
-        padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 16.h),
-        decoration: BoxDecoration(color: AppColors.deepTeal, borderRadius: BorderRadius.circular(10.r)),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Image.asset(Assets.assetsImagesPatient, height: 110.h),
-            Text(S.of(context).nurse, style: AppTextStyles.ibmPlexSans20Bold(context).copyWith(color: AppColors.white)),
-          ],
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 45.w),
+      child: InkWell(
+        onTap: onTap,
+        child: Container(
+          padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 16.h),
+          decoration: BoxDecoration(
+            color: cardColor,
+            borderRadius: BorderRadius.circular(10.r),
+            boxShadow:
+                hasShadow
+                    ? [BoxShadow(color: Colors.black.withOpacity(.25), blurRadius: 4, offset: const Offset(0, 2))]
+                    : null,
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Image.asset(image, height: 110.h),
+              Expanded(
+                child: Text(
+                  textAlign: TextAlign.center,
+                  title,
+                  style: AppTextStyles.ibmPlexSans20Bold(context).copyWith(color: textColor),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
   }
 }
 
-class PatientCard extends StatelessWidget {
-  const PatientCard({super.key});
+class LeadingImageCard extends StatelessWidget {
+  const LeadingImageCard({
+    super.key,
+    this.onTap,
+    this.textColor = AppColors.white,
+    this.cardColor = AppColors.deepTeal,
+    this.hasShadow = false,
+    required this.title,
+    required this.image,
+  });
+
+  final Color cardColor;
+  final Color textColor;
+  final String title;
+  final String image;
+  final bool hasShadow;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () => context.pushNamed(Routes.registerPatientScreen),
-      child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 45.w),
-        padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 16.h),
-        decoration: BoxDecoration(color: AppColors.deepTeal, borderRadius: BorderRadius.circular(10.r)),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              S.of(context).patient,
-              style: AppTextStyles.ibmPlexSans20Bold(context).copyWith(color: AppColors.white),
-            ),
-            Image.asset(Assets.assetsImagesPana, height: 110.h),
-          ],
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 45.w),
+      child: InkWell(
+        onTap: onTap,
+        child: Container(
+          padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 16.h),
+          decoration: BoxDecoration(
+            color: cardColor,
+            borderRadius: BorderRadius.circular(10.r),
+            boxShadow:
+                hasShadow
+                    ? [BoxShadow(color: Colors.black.withOpacity(.25), blurRadius: 4, offset: const Offset(0, 2))]
+                    : null,
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Expanded(
+                child: Text(
+                  textAlign: TextAlign.center,
+
+                  title,
+                  style: AppTextStyles.ibmPlexSans20Bold(context).copyWith(color: textColor),
+                ),
+              ),
+              Image.asset(image, height: 110.h),
+            ],
+          ),
         ),
       ),
     );

@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:nursy/core/constants/assets.dart';
+import 'package:nursy/core/helpers/extensions.dart';
 import 'package:nursy/core/helpers/validators.dart';
+import 'package:nursy/core/routing/routes.dart';
 import 'package:nursy/core/theming/app_colors.dart';
 import 'package:nursy/core/widgets/custom_button.dart';
 import 'package:nursy/core/widgets/custom_text_field.dart';
@@ -41,6 +43,7 @@ class LoginFormSection extends StatefulWidget {
 }
 
 class _LoginFormSectionState extends State<LoginFormSection> {
+  final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   bool isObscure = true;
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
@@ -53,7 +56,7 @@ class _LoginFormSectionState extends State<LoginFormSection> {
       child: Column(
         children: [
           CustomTextField(
-            textController: TextEditingController(),
+            textController: _emailController,
             labelText: S.of(context).email,
             prefixIcon: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -86,7 +89,7 @@ class _LoginFormSectionState extends State<LoginFormSection> {
           CustomButton(
             onPressed: () {
               if (_formKey.currentState!.validate()) {
-                // Perform login action
+                context.pushNamed(Routes.homeScreen);
               } else {
                 setState(() {
                   _autoValidateMode = AutovalidateMode.onUserInteraction;

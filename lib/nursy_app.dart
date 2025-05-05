@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:nursy/features/drawer_nav_cubit/drawer_nav_cubit.dart';
 
 import 'core/routing/app_router.dart';
 import 'core/routing/routes.dart';
@@ -18,7 +19,10 @@ class NursyApp extends StatelessWidget {
       designSize: const Size(375, 812),
       minTextAdapt: true,
       child: MultiBlocProvider(
-        providers: [BlocProvider(create: (context) => getIt<LocaleCubit>())],
+        providers: [
+          BlocProvider(create: (context) => getIt<LocaleCubit>()),
+          BlocProvider(create: (context) => DrawerNavCubit()),
+        ],
         child: BlocBuilder<LocaleCubit, Locale>(
           builder: (context, state) {
             return MaterialApp(
