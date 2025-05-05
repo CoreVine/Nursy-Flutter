@@ -79,26 +79,26 @@ class ProfileScreen extends StatelessWidget {
                     subTitle: '+201002816543',
                 ),
                 CustomProfileItem(
-                    title: S.of(context).birth_date,
+                    title: 'Birth date',
                     subTitle: '30/04/1994',
                 ),
                 CustomProfileItem(
-                    title: S.of(context).gender,
-                    subTitle: S.of(context).female,
+                    title: 'Gender',
+                    subTitle: 'Female',
                 ),
-                Text(S.of(context).speciality,
+                Text('Speciality',
                   style: AppTextStyles.ibmPlexSans16SemiBold(context).copyWith(
                     color: AppColors.brightTeal
                   ),),
                 SizedBox(
                   height: 16,),
                 CustomProfileItem(
-                    title: S.of(context).domain,
-                    subTitle: S.of(context).kidney_failure,
+                    title: 'Domain',
+                    subTitle: 'Kidney Failure',
                 ),
                 CustomProfileItem(
-                    title: S.of(context).special_illness,
-                    subTitle: S.of(context).normal,
+                    title: 'Special illness',
+                    subTitle: 'Normal',
                 ),
               ],
             ),
