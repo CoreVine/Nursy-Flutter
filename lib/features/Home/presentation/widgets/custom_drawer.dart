@@ -99,6 +99,7 @@ class CustomDrawer extends StatelessWidget {
                   iconString: Assets.assetsIconsMaterialSymbolsLogoutRounded,
                   title:  S.of(context).log_out,
                   onTap: () {},
+
                 ),
               ],
             ),
