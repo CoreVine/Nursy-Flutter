@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/constants/assets.dart';
-import '../../../../core/theming/app_colors.dart';
-import '../../../../core/theming/app_text_styles.dart';
-import '../../../../generated/l10n.dart';
+import '../constants/assets.dart';
+import '../theming/app_colors.dart';
+import '../theming/app_text_styles.dart';
 
-class CustomReceiptAppBar extends StatelessWidget  implements PreferredSizeWidget {
-  const CustomReceiptAppBar({super.key});
+class CustomAppBar extends StatelessWidget  implements PreferredSizeWidget {
+  const CustomAppBar({super.key, required this.title});
+
+  final String title;
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       title: Text(
-        S.of(context).receipt,
+        title,
         style: AppTextStyles.ibmPlexSans18Bold(context).copyWith(
-          color: Colors.white
+            color: Colors.white
         ),
       ),
       backgroundColor: AppColors.skyBlue,

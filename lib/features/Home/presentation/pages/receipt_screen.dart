@@ -3,11 +3,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nursy/core/theming/app_colors.dart';
 import 'package:nursy/core/theming/app_text_styles.dart';
+import 'package:nursy/core/widgets/custom_app_bar.dart';
 import 'package:nursy/features/Home/presentation/widgets/custom_receipt_item.dart';
 
 import '../../../../core/constants/assets.dart';
+import '../../../../core/widgets/custom_button.dart';
 import '../../../../generated/l10n.dart';
-import '../widgets/custom_receipt_app_bar.dart';
 
 class ReceiptScreen extends StatelessWidget {
   const ReceiptScreen({super.key});
@@ -15,7 +16,8 @@ class ReceiptScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomReceiptAppBar(),
+      appBar: CustomAppBar(
+        title: S.of(context).receipt,),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -76,22 +78,16 @@ class ReceiptScreen extends StatelessWidget {
           ),
           SizedBox(
               height: 32.h),
-          ElevatedButton(
-            onPressed: () {
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor: AppColors.brightTeal,
-              padding: EdgeInsets.symmetric(horizontal: 77, vertical: 14),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(25),
-              ),
-            ),
-            child: Text(
-              S.of(context).done,
-              style: AppTextStyles.inter18Bold(context).copyWith(
+          CustomButton(
+            text: S.of(context).done,
+            xPadding: 77,
+            yPadding: 14,
+            bgColor: AppColors.brightTeal,
+            width: 200.w,
+            textStyle: AppTextStyles.inter18Bold(context).copyWith(
                 color: AppColors.white
-              ),
             ),
+            onPressed: (){},
           ),
         ],
       ),
