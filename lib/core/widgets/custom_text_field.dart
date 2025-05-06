@@ -13,6 +13,8 @@ class CustomTextField extends StatelessWidget {
     this.keyboardType,
     this.suffixIcon,
     this.prefixIcon,
+    this.fillColor = AppColors.white,
+    this.maxLines,
   });
 
   final TextEditingController? textController;
@@ -22,15 +24,18 @@ class CustomTextField extends StatelessWidget {
   final Widget? prefixIcon;
   final TextInputType? keyboardType;
   final String? Function(String? value)? validator;
+  final Color? fillColor;
+  final int? maxLines ;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      maxLines: maxLines,
       keyboardType: keyboardType,
       obscureText: isObscure ?? false,
       controller: textController,
       decoration: InputDecoration(
-        fillColor: AppColors.white,
+        fillColor: fillColor,
         filled: true,
         hintText: labelText,
         hintStyle: AppTextStyles.inter14Medium(context).copyWith(color: AppColors.lightGray),

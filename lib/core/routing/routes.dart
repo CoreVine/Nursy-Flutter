@@ -10,4 +10,7 @@ class Routes {
   static const String patientVerifyScreen = '/verifyScreen/patient';
   static const String registerNurseScreen = '/registerScreen/nurse';
   static const String homeScreen = '/homeScreen';
+  static const String orderDetailsScreen = '/orderDetailsScreen';
+  static const String receiptScreen = '/receiptScreen';
+  static const String reviewScreen = '/reviewScreen';
 }
