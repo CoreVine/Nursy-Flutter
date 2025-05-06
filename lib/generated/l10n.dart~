@@ -389,7 +389,7 @@ class S {
 
   /// `Order details`
   String get order_details {
-    return Intl.message('Order details:', name: 'order_details', desc: '', args: []);
+    return Intl.message('Order details', name: 'order_details', desc: '', args: []);
   }
 
   /// `Payment`

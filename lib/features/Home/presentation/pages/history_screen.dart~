@@ -19,7 +19,7 @@ class HistoryScreen extends StatelessWidget {
           bottom: 0,
           child: SizedBox(
             child: Image.asset(
-              Assets.assetsImagesWhiteBackgroundShape,
+              Assets.assetsIconsAkarIconsRadio,
               fit: BoxFit.cover,
               width: context.width,
             ),
