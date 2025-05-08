@@ -552,16 +552,12 @@ class S {
 
   /// `Order details`
   String get order_details {
-
-    return Intl.message('Order details:', name: 'order_details', desc: '', args: []);
-
     return Intl.message(
       'Order details',
       name: 'order_details',
       desc: '',
       args: [],
     );
-
   }
 
   /// `Payment`
@@ -581,7 +577,7 @@ class S {
 
   /// `Client`
   String get client {
-    return Intl.message('Client:', name: 'client', desc: '', args: []);
+    return Intl.message('Client', name: 'client', desc: '', args: []);
   }
 
   /// `Add payment method`
