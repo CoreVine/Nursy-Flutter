@@ -145,7 +145,7 @@
   "scheduled_oeders": "الطلبات المجدولة",
   "dashboard": "لوحة التحكم",
   "on_spot": "فوري",
-  "ant_special_illness?": "هل يوجد مرض خاص؟",
+  "any_special_illness": "هل لديك أي مرض خاص؟",
   "do_you_have_patient": "هل لديك بيانات المريض؟",
   "no": "لا",
   "yes": "نعم",
@@ -158,5 +158,7 @@
   "paste": "لصق",
   "cancel": "إلغاء",
   "paste_code": "لصق الكود",
-  "paste_code_message": "هل تريد لصق الكود"
+  "scheduled_orders": "الطلبات المجدولة",
+  "paste_code_message": "هل تريد لصق الكود",
+  "please_enter_location": "يرجى إدخال موقعك"
 }

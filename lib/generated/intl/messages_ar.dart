@@ -41,6 +41,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "age": MessageLookupByLibrary.simpleMessage("العمر"),
     "any_comment": MessageLookupByLibrary.simpleMessage("أي ملاحظات؟"),
+    "any_special_illness": MessageLookupByLibrary.simpleMessage(
+      "هل لديك أي مرض خاص؟",
+    ),
     "appointment_date": MessageLookupByLibrary.simpleMessage("تاريخ الموعد"),
     "appointment_time": MessageLookupByLibrary.simpleMessage("موعد الحجز"),
     "as_usual": MessageLookupByLibrary.simpleMessage("كالمعتاد"),
@@ -195,6 +198,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "phone_number_required": MessageLookupByLibrary.simpleMessage(
       "رقم الهاتف مطلوب",
     ),
+    "please_enter_location": MessageLookupByLibrary.simpleMessage(
+      "يرجى إدخال موقعك",
+    ),
     "proceed": MessageLookupByLibrary.simpleMessage("متابعة"),
     "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
     "promotion": MessageLookupByLibrary.simpleMessage("كود خصم"),
@@ -210,6 +216,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "salary": MessageLookupByLibrary.simpleMessage("الراتب"),
     "schedule_time": MessageLookupByLibrary.simpleMessage("تحديد الموعد"),
     "scheduled_oeders": MessageLookupByLibrary.simpleMessage(
+      "الطلبات المجدولة",
+    ),
+    "scheduled_orders": MessageLookupByLibrary.simpleMessage(
       "الطلبات المجدولة",
     ),
     "service_1": MessageLookupByLibrary.simpleMessage("الخدمة 1"),
