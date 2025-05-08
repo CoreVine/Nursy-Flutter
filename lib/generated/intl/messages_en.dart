@@ -43,6 +43,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "age": MessageLookupByLibrary.simpleMessage("Age"),
     "alzheimers": MessageLookupByLibrary.simpleMessage("Alzheimer"),
     "any_comment": MessageLookupByLibrary.simpleMessage("Any Comment?"),
+    "any_special_illness": MessageLookupByLibrary.simpleMessage(
+      "Any special illness?",
+    ),
     "appointment_date": MessageLookupByLibrary.simpleMessage(
       "Appointment date",
     ),
@@ -206,6 +209,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "phone_number_required": MessageLookupByLibrary.simpleMessage(
       "Phone number is required",
     ),
+    "please_enter_location": MessageLookupByLibrary.simpleMessage(
+      "Please enter your location",
+    ),
     "proceed": MessageLookupByLibrary.simpleMessage("Proceed"),
     "profile": MessageLookupByLibrary.simpleMessage("Profile"),
     "promotion": MessageLookupByLibrary.simpleMessage("Promotion"),
@@ -223,6 +229,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "salary": MessageLookupByLibrary.simpleMessage("Salary"),
     "schedule_time": MessageLookupByLibrary.simpleMessage("Schedule time"),
     "scheduled_oeders": MessageLookupByLibrary.simpleMessage(
+      "Scheduled orders",
+    ),
+    "scheduled_orders": MessageLookupByLibrary.simpleMessage(
       "Scheduled orders",
     ),
     "service_1": MessageLookupByLibrary.simpleMessage("Service 1"),
