@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nursy/core/constants/assets.dart';
+import 'package:nursy/core/routing/routes.dart';
 import 'package:nursy/core/theming/app_colors.dart';
 import 'package:nursy/core/utils/functions/launch_url.dart';
 import 'package:nursy/core/widgets/custom_button_with_icon.dart';
@@ -32,7 +33,9 @@ class HomeScreen extends StatelessWidget {
                       cardColor: AppColors.white,
                       textColor: AppColors.deepTeal,
                       hasShadow: true,
-                      onTap: () {},
+                      onTap: () {
+                        context.pushNamed(Routes.nursingServicesScreen);
+                      },
                     ),
                     SizedBox(height: 24.h),
                     TrailingImageCard(

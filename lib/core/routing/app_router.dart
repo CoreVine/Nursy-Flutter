@@ -6,6 +6,7 @@ import 'package:nursy/features/Auth/presentation/pages/register_nurse_screen.dar
 import 'package:nursy/features/Auth/presentation/pages/register_patient_screen.dart';
 import 'package:nursy/features/Auth/presentation/pages/register_screen.dart';
 import 'package:nursy/features/Home/presentation/pages/main_screen.dart';
+import 'package:nursy/features/Home/presentation/pages/nursing_services_screen.dart';
 import 'package:nursy/features/auth/presentation/pages/login_screen.dart';
 import 'package:nursy/features/on_boarding/presentation/pages/onboarding_screen.dart';
 import 'package:nursy/features/splash/splash_screen.dart';
@@ -41,6 +42,9 @@ class AppRouter {
 
       case Routes.homeScreen:
         return MaterialPageRoute(builder: (_) => MainScreen());
+
+      case Routes.nursingServicesScreen:
+        return MaterialPageRoute(builder: (_) => NursingServicesScreen());
     }
     return null;
   }

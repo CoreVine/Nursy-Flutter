@@ -38,6 +38,14 @@ class Assets {
   /// assets/icons/icon-park-solid_correct.svg
   static const String assetsIconsIconParkSolidCorrect = "assets/icons/icon-park-solid_correct.svg";
 
+  /// Assets for assetsIconsIconamoonArrowLeft2
+  /// assets/icons/iconamoon_arrow-left-2.svg
+  static const String assetsIconsIconamoonArrowLeft2 = "assets/icons/iconamoon_arrow-left-2.svg";
+
+  /// Assets for assetsIconsIconamoonArrowRight2
+  /// assets/icons/iconamoon_arrow-right-2.svg
+  static const String assetsIconsIconamoonArrowRight2 = "assets/icons/iconamoon_arrow-right-2.svg";
+
   /// Assets for assetsIconsIconamoonEyeFill
   /// assets/icons/iconamoon_eye-fill.svg
   static const String assetsIconsIconamoonEyeFill = "assets/icons/iconamoon_eye-fill.svg";
@@ -109,6 +117,10 @@ class Assets {
   /// Assets for assetsIconsTwemojiFlagGermany
   /// assets/icons/twemoji_flag-germany.svg
   static const String assetsIconsTwemojiFlagGermany = "assets/icons/twemoji_flag-germany.svg";
+
+  /// Assets for assetsImagesAHoleYearPana
+  /// assets/images/a-hole-year-pana.png
+  static const String assetsImagesAHoleYearPana = "assets/images/a-hole-year-pana.png";
 
   /// Assets for assetsImagesBackground
   /// assets/images/background.png
@@ -205,6 +217,14 @@ class Assets {
   /// Assets for assetsSvgsLogo
   /// assets/svgs/logo.svg
   static const String assetsSvgsLogo = "assets/svgs/logo.svg";
+
+  /// Assets for assetsSvgsMingcuteTimeLine
+  /// assets/svgs/mingcute_time-line.svg
+  static const String assetsSvgsMingcuteTimeLine = "assets/svgs/mingcute_time-line.svg";
+
+  /// Assets for assetsSvgsMingcuteTimeLine2
+  /// assets/svgs/mingcute_time-line2.svg
+  static const String assetsSvgsMingcuteTimeLine2 = "assets/svgs/mingcute_time-line2.svg";
 
   /// Assets for assetsSvgsMissionAccomplished
   /// assets/svgs/mission_accomplished.svg

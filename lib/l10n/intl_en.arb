@@ -145,7 +145,7 @@
   "scheduled_oeders": "Scheduled orders",
   "dashborard": "Dashboard",
   "on_spot": "On spot",
-  "ant_special_illness?": "Any special illness?",
+  "any_special_illness": "Any special illness?",
   "llenss_type": "Illness type",
   "do_you_have_patient": "Do you have patient information?",
   "no": "No",
@@ -159,5 +159,7 @@
   "paste": "Paste",
   "cancel": "Cancel",
   "paste_code": "Paste code",
-  "paste_code_message": "Do you want to paste the code"
+  "scheduled_orders": "Scheduled orders",
+  "paste_code_message": "Do you want to paste the code",
+  "please_enter_location": "Please enter your location"
 }
