@@ -128,6 +128,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "id_picture": MessageLookupByLibrary.simpleMessage("National ID picture"),
     "illness_type": MessageLookupByLibrary.simpleMessage("Illness type"),
     "invalid_email": MessageLookupByLibrary.simpleMessage("Invalid email"),
+    "invalid_national_id": MessageLookupByLibrary.simpleMessage(
+      "Invalid national ID",
+    ),
     "invalid_otp_code": MessageLookupByLibrary.simpleMessage(
       "Invalid OTP code",
     ),

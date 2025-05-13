@@ -161,5 +161,6 @@
   "paste_code": "Paste code",
   "scheduled_orders": "Scheduled orders",
   "paste_code_message": "Do you want to paste the code",
-  "please_enter_location": "Please enter your location"
+  "please_enter_location": "Please enter your location",
+  "invalid_national_id": "Invalid national ID"
 }

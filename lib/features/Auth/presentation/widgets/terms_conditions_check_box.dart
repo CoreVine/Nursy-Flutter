@@ -14,9 +14,9 @@ class TermsConditionsCheckBox extends StatelessWidget {
     return FormField<bool>(
       builder:
           (state) => Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Checkbox.adaptive(
                     value: isChecked,
@@ -45,9 +45,12 @@ class TermsConditionsCheckBox extends StatelessWidget {
                 ],
               ),
               if (state.hasError)
-                Text(
-                  state.errorText ?? '',
-                  style: AppTextStyles.inter12Medium(context).copyWith(color: AppColors.deepRed),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Text(
+                    state.errorText ?? '',
+                    style: AppTextStyles.inter12Medium(context).copyWith(color: AppColors.deepRed),
+                  ),
                 ),
             ],
           ),

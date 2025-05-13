@@ -1,13 +1,10 @@
 class AppRegex {
   static bool isEmailValid(String email) {
-    return RegExp(r'^\s*.+@[a-zA-Z]+\.[a-zA-Z]+(\.{0,1}[a-zA-Z]+)?\s*$')
-        .hasMatch(email);
+    return RegExp(r'^\s*.+@[a-zA-Z]+\.[a-zA-Z]+(\.{0,1}[a-zA-Z]+)?\s*$').hasMatch(email);
   }
 
   static bool isPasswordValid(String password) {
-    return RegExp(
-            r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$")
-        .hasMatch(password);
+    return RegExp(r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$").hasMatch(password);
   }
 
   static bool isPhoneNumberValid(String phoneNumber) {
@@ -34,6 +31,10 @@ class AppRegex {
     return RegExp(r'^(?=.{8,})').hasMatch(password);
   }
 
+  static bool isNationalId(String id) {
+    return RegExp(r'^(2|3)([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])[0-9]{7}$').hasMatch(id);
+  }
+
   static String obfuscateEmail(String email) {
     int atIndex = email.indexOf('@');
     if (atIndex == -1) return email; // Invalid email
@@ -42,9 +43,7 @@ class AppRegex {
     String domainPart = email.substring(atIndex);
 
     int obfuscateLength = (namePart.length / 2).ceil();
-    String obfuscatedNamePart =
-        namePart.substring(0, namePart.length - obfuscateLength) +
-            '*' * obfuscateLength;
+    String obfuscatedNamePart = namePart.substring(0, namePart.length - obfuscateLength) + '*' * obfuscateLength;
 
     return " $obfuscatedNamePart$domainPart";
   }

@@ -1275,6 +1275,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Invalid national ID`
+  String get invalid_national_id {
+    return Intl.message(
+      'Invalid national ID',
+      name: 'invalid_national_id',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

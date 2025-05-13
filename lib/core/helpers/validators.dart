@@ -48,6 +48,15 @@ class AppValidators {
     return null;
   }
 
+  static String? nationalIdValidator(String? value, BuildContext context) {
+    if (value!.isEmpty) {
+      return S.of(context).required;
+    } else if (!AppRegex.isNationalId(value)) {
+      return S.of(context).invalid_national_id;
+    }
+    return null;
+  }
+
   static String? otpValidator(String? value, BuildContext context) {
     if (value!.isEmpty) {
       return S.of(context).required;

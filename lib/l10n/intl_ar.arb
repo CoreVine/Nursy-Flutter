@@ -160,5 +160,6 @@
   "paste_code": "لصق الكود",
   "scheduled_orders": "الطلبات المجدولة",
   "paste_code_message": "هل تريد لصق الكود",
-  "please_enter_location": "يرجى إدخال موقعك"
+  "please_enter_location": "يرجى إدخال موقعك",
+  "invalid_national_id": "رقم قومي غير صالح"
 }

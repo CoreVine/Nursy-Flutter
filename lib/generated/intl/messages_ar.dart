@@ -122,6 +122,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "invalid_email": MessageLookupByLibrary.simpleMessage(
       "البريد الإلكتروني غير صالح",
     ),
+    "invalid_national_id": MessageLookupByLibrary.simpleMessage(
+      "رقم قومي غير صالح",
+    ),
     "invalid_otp_code": MessageLookupByLibrary.simpleMessage(
       "كود التفعيل غير صالح",
     ),
